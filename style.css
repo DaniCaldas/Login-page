@@ -1,0 +1,134 @@
+/*config login*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #191314;
+    
+    }
+    
+.items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:0 auto;
+    width: 30%;
+    background-image: linear-gradient(to bottom right,#61A1FF,#018BDB,#0168B7);
+    padding: 80px;
+    border-radius: 15px;
+    color: #000000c5;
+    box-shadow: 10px 5px 5px rgba(71, 71, 71, 0.651);
+    border-color: #001E57;
+    border-style: solid;
+    border-width: 5px;
+}
+/*config input*/
+
+input{
+ background-color: #ffffff ;
+ border-radius: 1em;
+ padding: 15px;
+ border: solid;
+ outline: none;
+ font-size: 17px;
+ transition: border 150ms cubic-bezier(0.4,0,0.2,1);
+}
+
+input:focus{
+    background-color:#ffffffc0;
+    transition: .3s;
+    outline: none;
+    border: 1.5px solid;
+}
+input:invalid {
+    outline: none;
+    border: 2px solid #d91205;
+}
+
+input:valid{
+    border-color:#43b70e;
+}
+
+input::-webkit-input-placeholder{
+    color: #001E57;
+    font-weight: 100;
+}
+input:focus::-webkit-input-placeholder{
+    transition: .2s;
+    opacity: 0%;
+}
+
+.button{
+    background-color: #26b6b1;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    border-radius: 10px;
+    border-color: #26b6b1;
+    color: mintcream;
+    font-size: 15px;
+    cursor: pointer;
+}
+.button:hover{
+    transition: .5s;
+    background-color: rgb(3, 105, 105);
+}
+
+.input-genero{
+    height: 40px;
+    border-radius: 4px;
+    border-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+.input-genero:focus{
+    text-decoration: none;
+}
+
+input[type="date"]{
+    height: 50px;
+    width: 180px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    outline: none;
+}
+::-webkit-calendar-picker-indicator{
+    background-color: #0cb80c;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.span{
+    transition: 2s linear;
+    animation: 2s message ease-out ;
+    border: 7px solid #BA0307;
+    font-weight: bold;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    left: 15%;
+    top: 50%;
+    text-align: center;
+    color: white;
+    height: 4em;
+    width: 70%;
+    color: #001E57;
+    background-color: #d91205;
+}
+
+@keyframes message {
+    0%{left: 0%;}
+    5%{left: 1%;}
+    7%{left: 2%;}
+    10%{left: 3%;}
+    20%{left: 5%;}
+    30%{left: 7%;}
+    40%{left: 9%;}
+    50%{left: 10%;}
+    60%{left:11% ;}
+    70%{left: 12%;}
+    80%{left: 13;}
+    100%{left: 15%;}
+}
