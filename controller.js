@@ -1,5 +1,7 @@
-function clicar() {
-    
+let inputs = document.querySelectorAll('article input')
+
+
+function clicar() {    
 
     var name = document.querySelector('#Nome')
 
